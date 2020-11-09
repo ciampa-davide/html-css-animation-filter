@@ -157,9 +157,8 @@
     height: 20px;
 
 }
-.ex-12-top-white{
-  animation: movetop12 2s linear ;
-
+.ex-12-button:hover .ex-12-top-white{
+  animation: movetop12 2s linear infinite;
 }
 @keyframes movetop12 {
 
@@ -167,7 +166,7 @@
     left: 10%;
   }
   50%{
-    left: 90%;
+    left:calc(100% - 60px);
   }
   100%{
     left:10%
@@ -182,21 +181,21 @@
     width: 60px;
     height: 20px;
 }
-.ex-12-bottom-white{
-  animation: movebottom12 2s linear;
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: movebottom12 2s linear reverse infinite;
 }
 
 
 @keyframes movebottom12 {
 
   0%{
-    right: 90%;
-  }
-  50%{
     right: 20%;
   }
+  50%{
+    right:calc(100% - 60px);
+  }
   100%{
-    right:90%
+    right:20%
   }
 
 }
